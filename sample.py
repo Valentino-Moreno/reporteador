@@ -6,7 +6,7 @@ font_path = './font/unifont/'
 pdf = FPDF('P', 'mm', 'A4')
 pdf.add_page()
 
-fecha="AYSAM"
+fecha="nicolas"
 
 # add font
 pdf.add_font('Simsun', '', font_path + 'SIMSUN.ttf', uni=True)
@@ -14,7 +14,7 @@ pdf.add_font('Simsun', '', font_path + 'SIMSUN.ttf', uni=True)
 pdf.set_margins(0, 0, 0)
 
 pdf.set_font('Arial', 'B', 16)
-pdf.cell(40, 10, 'Hello World! '+ fecha, 0, 1)
+pdf.cell(40, 10, 'Hello World!', fecha, 0, 1)
 
 pdf.set_font('Times', '', 12)
 pdf.cell(210, 10, 'Powered by FPDF.', 0, 0, 'C')
@@ -22,18 +22,13 @@ pdf.cell(210, 10, 'Powered by FPDF.', 0, 0, 'C')
 pdf.set_font('Arial', '', 12)
 pdf.ln(50)
 pdf.cell(85)
-pdf.cell(0, 0, 'HOLA ALEJO.', 0)
-
-pdf.set_font('Arial', '', 12)
-pdf.ln(50)
-pdf.cell(85)
-pdf.cell(0, 0, 'ACA ESTAMOS HACIENDO LAS PRUEBAS.', 0)
+pdf.cell(0, 0, 'HOLA AYSAM.', 0)
 
 # add image
 pdf.image('cat_in_the_snow.jpg', 85, 32.5, 40)
 
 # draw a line
-pdf.line(85, 270.5, 25, 27.5)
+pdf.line(85, 27.5, 125, 27.5)
 
 # draw a rectangle
 pdf.rect(80, 20, 50, 55)
@@ -48,8 +43,6 @@ pdf.ln(50)
 pdf.cell(70)
 pdf.cell(70, 0, 'ACA ANDAMOS EN AYSAM.', 0, 0, 'C')
 
-pdf.rect(80,80,30,30)
 
 
-
-pdf.output('prueba45.pdf', 'F')
+pdf.output('prueba2.pdf', 'F')
