@@ -39,14 +39,73 @@ pdf.ln(-4)
 pdf.cell(160)
 pdf.cell(0, 0, 'AYSAM /IE.02/PO.04/a', 0)
 
-
+#hace los rectangulos
+pdf.set_fill_color(200,200,200)
+pdf.rect(x = 10, y = 46, w = 110, h = 8, style = 'DF')
+pdf.rect(x = 120, y = 46, w = 80, h = 8, style = 'DF')
+#define el tipo de letra, tamaño y color
 pdf.set_font('Arial', 'B',12)
-# pdf.set_fill_color(110,110,110)
+pdf.set_fill_color(110,110,110)
+#imprime texto
+pdf.ln(14)
+pdf.cell(40)
+pdf.cell(140, 0, 'APELLIDO Y NOMBRE', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(150)
+pdf.cell(140, 0, 'LEGAJO', 0)
+
+
+#define el tipo de letra, tamaño y color
+pdf.set_font('Arial', 'B',12)
+#imprime texto
 pdf.ln(10)
-pdf.cell(10)
-pdf.cell(120, 8, '                                   APELLIDO Y NOMBRE', 1)
-pdf.cell(70, 8, '                      LEGAJO', 1)
-# pdf.line(x1 = 130, y1 = 46, x2 = 130, y2 = 54)
+pdf.cell(40)
+pdf.cell(140, 0, 'VARIABLE VARIABLE', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(150)
+pdf.cell(140, 0, 'VARIABLE', 0)
+
+#hace los rectangulos
+pdf.set_fill_color(200,200,200)
+pdf.rect(x = 10, y = 70, w = 80, h = 8, style = 'DF')
+pdf.rect(x = 90, y = 70, w = 60, h = 8, style = 'DF')
+pdf.rect(x = 130, y = 70, w = 70, h = 8, style = 'DF')
+#define el tipo de letra, tamaño y color
+pdf.set_font('Arial', 'B',12)
+pdf.set_fill_color(110,110,110)
+#imprime texto
+pdf.ln(14)
+pdf.cell(22)
+pdf.cell(140, 0, 'PERIODO DE VACACIONES', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(93)
+pdf.cell(140, 0, 'TOTAL DE DIAS', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(135)
+pdf.cell(140, 0, 'CORRESPONDEN AL AÑO', 0)
+
+
+
+
+
+
+
+# pdf.set_font('Arial', 'B',12)
+# pdf.set_fill_color(110,110,110)
+# pdf.ln(10)
+# pdf.cell(10)
+# pdf.cell(120, 8, '                                   APELLIDO Y NOMBRE', 1)
+# pdf.cell(70, 8, '                      LEGAJO', 1)
+# # pdf.line(x1 = 130, y1 = 46, x2 = 130, y2 = 54)
+
+# pdf.ln(8)
+# pdf.cell(10)
+# pdf.cell(120, 8, '                                         variable', 1)
+# pdf.cell(70, 8, '                       variable', 1)
 
 
 
