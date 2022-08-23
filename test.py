@@ -88,29 +88,51 @@ pdf.ln(0)
 pdf.cell(135)
 pdf.cell(140, 0, 'CORRESPONDEN AL AÑO', 0)
 
+#define tipo de letra
+pdf.set_font('Arial', 'B',12)
+#imprime texto
+pdf.ln(10)
+pdf.cell(20)
+pdf.cell(140, 0, 'DESDE', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(60)
+pdf.cell(140, 0, 'HASTA', 0)
 
+#define tipo de letra
+pdf.set_font('Arial', '',12)
+#imprime texto
+pdf.ln(8)
+pdf.cell(18)
+pdf.cell(140, 0, 'VARIABLE', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(58)
+pdf.cell(140, 0, 'VARIABLE', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(104)
+pdf.cell(140, 0, 'VARIABLE', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(154)
+pdf.cell(0, 0, 'VARIABLE', 0)
 
-
-
-
-
-# pdf.set_font('Arial', 'B',12)
-# pdf.set_fill_color(110,110,110)
-# pdf.ln(10)
-# pdf.cell(10)
-# pdf.cell(120, 8, '                                   APELLIDO Y NOMBRE', 1)
-# pdf.cell(70, 8, '                      LEGAJO', 1)
-# # pdf.line(x1 = 130, y1 = 46, x2 = 130, y2 = 54)
-
-# pdf.ln(8)
-# pdf.cell(10)
-# pdf.cell(120, 8, '                                         variable', 1)
-# pdf.cell(70, 8, '                       variable', 1)
-
-
-
-
-
+#hace los rectangulos
+pdf.set_fill_color(200,200,200)
+pdf.rect(x = 60, y = 110, w = 80, h = 8, style = 'DF')
+#define tipo de letra
+pdf.set_font('Arial', 'B',12)
+#imprime texto
+pdf.ln(22)
+pdf.cell(66)
+pdf.cell(140, 0, 'DEBE REANUDAR LAS TAREAS', 0)
+#define tipo de letra
+pdf.set_font('Arial', '',12)
+#imprime texto
+pdf.ln(10)
+pdf.cell(88)
+pdf.cell(140, 0, 'VARIABLE', 0)
 
 
 
