@@ -134,6 +134,27 @@ pdf.ln(10)
 pdf.cell(88)
 pdf.cell(140, 0, 'VARIABLE', 0)
 
+#dibuja una linea
+pdf.line(x1 = 15, y1 = 170, x2 = 100, y2 = 170)
+pdf.line(x1 = 110, y1 = 170, x2 = 195, y2 = 170)
+
+#define tipo de letra
+pdf.set_font('Arial', '',12)
+#imprime texto
+pdf.ln(42)
+pdf.cell(47)
+pdf.cell(140, 0, 'VARIABLE', 0)
+#define tipo de letra
+pdf.set_font('Arial', 'B',12)
+#imprime texto
+pdf.ln(8)
+pdf.cell(49)
+pdf.cell(140, 0, 'FECHA', 0)
+#imprime texto
+pdf.ln(0)
+pdf.cell(122)
+pdf.cell(140, 0, 'FIRMA DEL COLABORADOR', 0)
+
 
 
 
